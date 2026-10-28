@@ -19,9 +19,6 @@ const messageNextBtn = document.getElementById("messageNextBtn");
 // =======================================
 
 
-const journeyPage = document.getElementById("journeyPage");
-const journeyNextBtn = document.getElementById("journeyNextBtn");
-
 let popped = 0;
 
 const photoPopup = document.getElementById("photoPopup");
@@ -105,8 +102,7 @@ musicToggle.innerHTML = "🔇 Muted";
 messageNextBtn.addEventListener("click", () => {
 
     messagePage.style.display = "none";
-
-    journeyPage.style.display = "flex";
+    giftPage.style.display = "flex";
 
     window.scrollTo({
         top: 0,
@@ -292,17 +288,5 @@ document.querySelectorAll("img").forEach(img => {
         e.preventDefault();
 
     });
-
-});
-
-journeyNextBtn.addEventListener("click", () => {
-
-    journeyPage.style.display = "none";
-    giftPage.style.display = "flex";
-
-    window.scrollTo({
-    top:0,
-    behavior:"instant"
-});
 
 });
